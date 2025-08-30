@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — The Upkeep Group</title>
+  <meta name="description" content="About The Upkeep Group Pty Ltd — founders, mission, and delivery approach.">
+  <link rel="stylesheet" href="styles.css"><link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="brand"><img src="logo.png" class="brand__logo" alt=""><span class="brand__name">The Upkeep Group</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html#services">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="index.html#contact" class="btn btn--small btn--primary">Get a Quote</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container" style="max-width:900px;">
+    <h1 class="section__title">About The Upkeep Group</h1>
+    <p class="muted">Co-founded by <strong>Himal Sapkota</strong> and <strong>Sudip Ojha</strong>, we unite IT operations, facilities management, cleaning, labour hire, and finance under one accountable partner.</p>
+
+    <div class="grid grid--2 gap--lg" style="margin-top:24px;">
+      <div class="card">
+        <div class="card__title">Our mission</div>
+        <p class="muted">Deliver reliable, auditable outcomes across sites and systems — not just promises. We focus on safety, transparency and speed.</p>
+      </div>
+      <div class="card">
+        <div class="card__title">Our approach</div>
+        <p class="muted">Documented SOPs, clear SLAs, QA audits with photos, and tight feedback loops. We scale quickly without losing control.</p>
+      </div>
+    </div>
+
+    <section class="section" style="padding-top:48px;padding-bottom:0;">
+      <h2 class="section__title">Founders</h2>
+      <div class="grid grid--2 gap--md">
+        <div class="person card">
+          <div class="avatar">HS</div>
+          <div class="person__name">Himal Sapkota</div>
+          <div class="muted">Co-founder/Director</div>
+        </div>
+        <div class="person card">
+          <div class="avatar">SO</div>
+          <div class="person__name">Sudip Ojha</div>
+          <div class="muted">Co-founder</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:48px;">
+      <h2 class="section__title">What clients can expect</h2>
+      <ul class="list">
+        <li>One vendor for IT, cleaning, facilities, labour & finance</li>
+        <li>Police-checked, insured crews; right-to-work verified</li>
+        <li>Safety first: WHS, inductions, toolbox talks</li>
+        <li>Operational transparency: KPIs, checklists & photos</li>
+        <li>Fast mobilisation with documented playbooks</li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container center small muted border--top pad--sm">© <span id="year"></span> The Upkeep Group Pty Ltd.</div>
+</footer>
+
+<script src="script.js" defer></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

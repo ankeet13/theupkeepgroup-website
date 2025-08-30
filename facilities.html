@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facilities Management — The Upkeep Group</title>
+  <meta name="description" content="Hard and soft facilities management with preventive maintenance, vendor coordination and compliance logs.">
+  <link rel="stylesheet" href="styles.css"><link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="brand"><img src="logo.svg" class="brand__logo" alt=""><span class="brand__name">The Upkeep Group</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html#services">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="index.html#contact" class="btn btn--small btn--primary">Get a Quote</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="section hero">
+    <div class="container">
+      <h1 class="hero__title">🏢 Facilities Management</h1>
+      <p class="muted" style="max-width:800px">
+        Hard and soft FM with preventive maintenance, vendor coordination, work orders and compliance logs —
+        delivered with clear SLAs and transparent reporting.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="index.html#contact">Request proposal</a>
+        <a class="btn btn--outline" href="index.html#services">Back to services →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid--2 gap--lg">
+      <div>
+        <h2 class="section__title">Why it matters</h2>
+        <ul class="list">
+          <li>Clear work order triage and turnaround times keep sites running.</li>
+          <li>Preventive maintenance schedules reduce downtime and costs.</li>
+          <li>Vendor onboarding, inductions and permit-to-work improve safety.</li>
+          <li>Risk assessments, toolbox talks and incident reporting drive compliance.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card__title">At a glance</div>
+        <p class="muted">What you get with our FM service:</p>
+        <ul class="list">
+          <li>FM operations & duty management</li>
+          <li>Work orders & ticketing workflows</li>
+          <li>SLA governance & vendor reviews</li>
+          <li>Asset registers & lifecycle planning</li>
+          <li>Compliance logs & documentation</li>
+          <li>Rapid site mobilisation playbooks</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <h2 class="section__title">How we deliver</h2>
+      <div class="grid grid--4 gap--md">
+        <div class="card"><div class="card__title">1) Discover</div><p class="muted">Site assessments, asset baselines, risk registers.</p></div>
+        <div class="card"><div class="card__title">2) Mobilise</div><p class="muted">Inductions, vendor setup, PM schedules & SLAs.</p></div>
+        <div class="card"><div class="card__title">3) Operate</div><p class="muted">Work orders, inspections, reporting & audits.</p></div>
+        <div class="card"><div class="card__title">4) Improve</div><p class="muted">Quarterly reviews, cost and uptime optimisation.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta">
+        <div>
+          <div class="cta__title">Ready for a scoped proposal?</div>
+          <p>We’ll send pricing, timelines and a mobilisation plan tailored to your sites.</p>
+        </div>
+        <a class="btn btn--secondary" href="index.html#contact">Request proposal</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container center small muted border--top pad--sm">© <span id="year"></span> The Upkeep Group Pty Ltd.</div>
+</footer>
+
+<script src="script.js" defer></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Industries — The Upkeep Group</title>
+  <meta name="description" content="Industries supported by The Upkeep Group across Australia.">
+  <link rel="stylesheet" href="styles.css"><link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="brand"><img src="logo.png" class="brand__logo" alt=""><span class="brand__name">The Upkeep Group</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html#services">Services</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="index.html#contact" class="btn btn--small btn--primary">Get a Quote</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1 class="section__title">Industries we support</h1>
+    <p class="muted">From startups to venues and enterprise sites across Australia.</p>
+
+    <div class="grid grid--3 gap--md" style="margin-top:24px;">
+      <div class="card"><div class="card__title">Corporate & Offices</div><p class="muted">HQs, satellites, hybrid workplace.</p></div>
+      <div class="card"><div class="card__title">Warehousing & Industrial</div><p class="muted">Distribution, manufacturing, logistics.</p></div>
+      <div class="card"><div class="card__title">Events & Venues</div><p class="muted">Stadiums, functions, conferences.</p></div>
+      <div class="card"><div class="card__title">Retail & Hospitality</div><p class="muted">Stores, quick-service, hotels.</p></div>
+      <div class="card"><div class="card__title">Tech & SaaS</div><p class="muted">Startups, scaleups, enterprise IT.</p></div>
+      <div class="card"><div class="card__title">Government & Education</div><p class="muted">Schools, campuses, local councils.</p></div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container center small muted border--top pad--sm">© <span id="year"></span> The Upkeep Group Pty Ltd.</div>
+</footer>
+
+<script src="script.js" defer></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
