@@ -1,98 +1,154 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Managed IT & Cloud — The Upkeep Group</title>
-  <meta name="description" content="Helpdesk, endpoint management, Microsoft 365/Azure/Workspace, backups/DR, networking and security with clear SLAs.">
-  <link rel="stylesheet" href="styles.css"><link rel="icon" href="logo.png" type="image/png">
+  <meta name="description" content="Helpdesk, endpoint management, Microsoft 365/Azure/Workspace, backups/DR, networking and security with clear SLAs and transparent reporting." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
 </head>
-<body>
-<header class="nav">
-  <div class="container nav__inner">
-    <a href="index.html" class="brand"><img src="logo.svg" class="brand__logo" alt=""><span class="brand__name">The Upkeep Group</span></a>
-    <nav class="nav__links" id="navLinks">
-      <a href="index.html#services">Services</a>
-      <a href="industries.html">Industries</a>
-      <a href="about.html">About</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-      <a href="index.html#contact" class="btn btn--small btn--primary">Get a Quote</a>
-    </nav>
-    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<main>
-  <section class="section hero">
-    <div class="container">
-      <h1 class="hero__title">💻 Managed IT & Cloud</h1>
-      <p class="muted" style="max-width:800px">
-        Helpdesk, endpoint management, Microsoft 365/Azure/Google Workspace, backups & DR, networking and security — delivered
-        with clear SLAs and transparent reporting.
-      </p>
-      <div class="hero__cta">
-        <a class="btn btn--primary" href="index.html#contact">Request proposal</a>
-        <a class="btn btn--outline" href="index.html#services">Back to services →</a>
-      </div>
+<body class="theme--dark">
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html#home" class="brand" aria-label="The Upkeep Group — Home">
+        <img src="logo.png" alt="The Upkeep Group logo" class="brand__logo" />
+        <span class="brand__name">The Upkeep Group</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#assurance">Assurance</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact" class="btn btn--small btn--primary">Get a Quote</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </section>
+  </header>
 
-  <section class="section">
-    <div class="container grid grid--2 gap--lg">
-      <div>
-        <h2 class="section__title">Why it matters</h2>
-        <ul class="list">
-          <li>Stabilise endpoints and reduce tickets with proactive patching and monitoring.</li>
-          <li>Harden identity and email with MFA, conditional access and anti-phish controls.</li>
-          <li>Automate onboarding/offboarding with documented SOPs and checklists.</li>
-          <li>Dashboards for uptime, response/resolve times and asset health.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="card__title">At a glance</div>
-        <p class="muted">What you get with our Managed IT & Cloud offering:</p>
-        <ul class="list">
-          <li>Helpdesk & on-site support</li>
-          <li>Endpoint management & patching</li>
-          <li>Microsoft 365 / Azure / Workspace admin</li>
-          <li>Backups & disaster recovery drills</li>
-          <li>Wi-Fi, VLANs, firewalls & VPN</li>
-          <li>Security reviews & compliance audits</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--soft">
-    <div class="container">
-      <h2 class="section__title">How we deliver</h2>
-      <div class="grid grid--4 gap--md">
-        <div class="card"><div class="card__title">1) Discover</div><p class="muted">Environment audit, risks, inventory & baselines.</p></div>
-        <div class="card"><div class="card__title">2) Mobilise</div><p class="muted">Enroll devices, SSO/MFA, backup policies, runbooks.</p></div>
-        <div class="card"><div class="card__title">3) Operate</div><p class="muted">SLA support, patching, monitoring, change control.</p></div>
-        <div class="card"><div class="card__title">4) Improve</div><p class="muted">Quarterly reviews, cost optimisations, roadmap.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="cta">
-        <div>
-          <div class="cta__title">Ready for a scoped proposal?</div>
-          <p>We’ll send pricing, timelines and a mobilisation plan tailored to your stack and risk profile.</p>
+  <main>
+    <!-- HERO -->
+    <section class="section hero">
+      <div class="glow glow--orb"></div>
+      <div class="container">
+        <h1 class="hero__title">💻 Managed IT &amp; Cloud</h1>
+        <p class="muted" style="max-width:820px">
+          Helpdesk, endpoint management, Microsoft 365/Azure/Google Workspace, backups &amp; DR, networking and security —
+          delivered with clear SLAs and transparent reporting.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="index.html#contact">Request proposal</a>
+          <a class="btn btn--ghost" href="index.html#services">Back to services →</a>
         </div>
-        <a class="btn btn--secondary" href="index.html#contact">Request proposal</a>
+      </div>
+    </section>
+
+    <!-- WHY / AT A GLANCE -->
+    <section class="section">
+      <div class="container grid grid--2">
+        <div>
+          <h2 class="section__title">Why it matters</h2>
+          <ul class="list">
+            <li>Stabilise endpoints and reduce tickets with proactive patching and monitoring.</li>
+            <li>Harden identity and email with MFA, conditional access and anti-phish controls.</li>
+            <li>Automate onboarding/offboarding with documented SOPs and checklists.</li>
+            <li>Dashboards for uptime, response/resolve times and asset health.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card__title">At a glance</div>
+          <p class="muted">What you get with our Managed IT &amp; Cloud offering:</p>
+          <ul class="list">
+            <li>Helpdesk &amp; on-site support</li>
+            <li>Endpoint management &amp; patching</li>
+            <li>Microsoft 365 / Azure / Workspace admin</li>
+            <li>Backups &amp; disaster recovery drills</li>
+            <li>Wi-Fi, VLANs, firewalls &amp; VPN</li>
+            <li>Security reviews &amp; compliance audits</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE DELIVER -->
+    <section class="section section--panel">
+      <div class="container">
+        <h2 class="section__title">How we deliver</h2>
+        <div class="grid grid--4">
+          <div class="card">
+            <div class="card__title">1) Discover</div>
+            <p class="muted">Environment audit, risks, inventory &amp; baselines.</p>
+          </div>
+          <div class="card">
+            <div class="card__title">2) Mobilise</div>
+            <p class="muted">Enroll devices, SSO/MFA, backup policies, runbooks.</p>
+          </div>
+          <div class="card">
+            <div class="card__title">3) Operate</div>
+            <p class="muted">SLA support, patching, monitoring, change control.</p>
+          </div>
+          <div class="card">
+            <div class="card__title">4) Improve</div>
+            <p class="muted">Quarterly reviews, cost optimisations, roadmap.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <div class="card__title">Ready for a scoped proposal?</div>
+          <p>We’ll send pricing, timelines and a mobilisation plan tailored to your stack and risk profile.</p>
+          <a class="btn btn--primary" href="index.html#contact">Request proposal</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container grid grid--4">
+      <div>
+        <a class="brand" href="index.html#home"><img src="logo.png" class="brand__logo" alt="" /> <span class="brand__name">The Upkeep Group</span></a>
+        <p class="muted small">IT • Facilities • Cleaning • Labour • Finance</p>
+      </div>
+      <div>
+        <div class="foot__title">Services</div>
+        <ul class="linklist">
+          <li><a href="it.html" aria-current="page">Managed IT &amp; Cloud</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="cleaning.html">Cleaning</a></li>
+          <li><a href="labour.html">Labour Hire</a></li>
+          <li><a href="finance.html">Finance</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot__title">Company</div>
+        <ul class="linklist">
+          <li><a href="about.html">About</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot__title">Coverage</div>
+        <ul class="linklist">
+          <li>NSW • VIC • QLD • SA • ACT</li>
+          <li>ABN: 00 000 000 000</li>
+          <li>ACN: 000 000 000</li>
+        </ul>
       </div>
     </div>
-  </section>
-</main>
+    <div class="container center small muted border--top pad--sm">
+      © <span id="year"></span> The Upkeep Group Pty Ltd.
+    </div>
+  </footer>
 
-<footer class="footer">
-  <div class="container center small muted border--top pad--sm">© <span id="year"></span> The Upkeep Group Pty Ltd.</div>
-</footer>
-
-<script src="script.js" defer></script>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <script src="script.js" defer></script>
 </body>
 </html>

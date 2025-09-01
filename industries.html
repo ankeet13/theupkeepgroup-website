@@ -1,47 +1,127 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Industries — The Upkeep Group</title>
-  <meta name="description" content="Industries supported by The Upkeep Group across Australia.">
-  <link rel="stylesheet" href="styles.css"><link rel="icon" href="logo.png" type="image/png">
+  <meta name="description" content="Industries supported by The Upkeep Group across Australia, from startups to enterprise sites." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
 </head>
-<body>
-<header class="nav">
-  <div class="container nav__inner">
-    <a href="index.html" class="brand"><img src="logo.png" class="brand__logo" alt=""><span class="brand__name">The Upkeep Group</span></a>
-    <nav class="nav__links" id="navLinks">
-      <a href="index.html#services">Services</a>
-      <a href="about.html">About</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-      <a href="index.html#contact" class="btn btn--small btn--primary">Get a Quote</a>
-    </nav>
-    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<main class="section">
-  <div class="container">
-    <h1 class="section__title">Industries we support</h1>
-    <p class="muted">From startups to venues and enterprise sites across Australia.</p>
-
-    <div class="grid grid--3 gap--md" style="margin-top:24px;">
-      <div class="card"><div class="card__title">Corporate & Offices</div><p class="muted">HQs, satellites, hybrid workplace.</p></div>
-      <div class="card"><div class="card__title">Warehousing & Industrial</div><p class="muted">Distribution, manufacturing, logistics.</p></div>
-      <div class="card"><div class="card__title">Events & Venues</div><p class="muted">Stadiums, functions, conferences.</p></div>
-      <div class="card"><div class="card__title">Retail & Hospitality</div><p class="muted">Stores, quick-service, hotels.</p></div>
-      <div class="card"><div class="card__title">Tech & SaaS</div><p class="muted">Startups, scaleups, enterprise IT.</p></div>
-      <div class="card"><div class="card__title">Government & Education</div><p class="muted">Schools, campuses, local councils.</p></div>
+<body class="theme--dark">
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html#home" class="brand" aria-label="The Upkeep Group — Home">
+        <img src="logo.png" alt="The Upkeep Group logo" class="brand__logo" />
+        <span class="brand__name">The Upkeep Group</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#assurance">Assurance</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact" class="btn btn--small btn--primary">Get a Quote</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </div>
-</main>
+  </header>
 
-<footer class="footer">
-  <div class="container center small muted border--top pad--sm">© <span id="year"></span> The Upkeep Group Pty Ltd.</div>
-</footer>
+  <main>
+    <!-- HERO -->
+    <section class="section hero">
+      <div class="glow glow--orb"></div>
+      <div class="container center">
+        <h1 class="hero__title">Industries we support</h1>
+        <p class="muted" style="max-width:720px; margin:0 auto;">
+          From startups to enterprise sites across Australia — tailored solutions for every sector.
+        </p>
+      </div>
+    </section>
 
-<script src="script.js" defer></script>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+    <!-- INDUSTRY CARDS -->
+    <section class="section">
+      <div class="container grid grid--3">
+        <div class="card">
+          <div class="card__title">Corporate &amp; Offices</div>
+          <p class="muted">HQs, satellites, hybrid workplaces.</p>
+        </div>
+        <div class="card">
+          <div class="card__title">Warehousing &amp; Industrial</div>
+          <p class="muted">Distribution, manufacturing, logistics.</p>
+        </div>
+        <div class="card">
+          <div class="card__title">Events &amp; Venues</div>
+          <p class="muted">Stadiums, functions, conferences.</p>
+        </div>
+        <div class="card">
+          <div class="card__title">Retail &amp; Hospitality</div>
+          <p class="muted">Stores, quick-service, hotels.</p>
+        </div>
+        <div class="card">
+          <div class="card__title">Tech &amp; SaaS</div>
+          <p class="muted">Startups, scaleups, enterprise IT.</p>
+        </div>
+        <div class="card">
+          <div class="card__title">Government &amp; Education</div>
+          <p class="muted">Schools, campuses, local councils.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="card center">
+          <div class="card__title">Not sure if we cover your sector?</div>
+          <p class="muted">Reach out and we’ll confirm coverage or tailor a scope for your industry.</p>
+          <a class="btn btn--primary" href="index.html#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container grid grid--4">
+      <div>
+        <a class="brand" href="index.html#home"><img src="logo.png" class="brand__logo" alt="" /> <span class="brand__name">The Upkeep Group</span></a>
+        <p class="muted small">IT • Facilities • Cleaning • Labour • Finance</p>
+      </div>
+      <div>
+        <div class="foot__title">Services</div>
+        <ul class="linklist">
+          <li><a href="it.html">Managed IT &amp; Cloud</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="cleaning.html">Cleaning</a></li>
+          <li><a href="labour.html">Labour Hire</a></li>
+          <li><a href="finance.html">Finance</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot__title">Company</div>
+        <ul class="linklist">
+          <li><a href="about.html">About</a></li>
+          <li><a href="industries.html" aria-current="page">Industries</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot__title">Coverage</div>
+        <ul class="linklist">
+          <li>NSW • VIC • QLD • SA • ACT</li>
+          <li>ABN: 00 000 000 000</li>
+          <li>ACN: 000 000 000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container center small muted border--top pad--sm">
+      © <span id="year"></span> The Upkeep Group Pty Ltd.
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>

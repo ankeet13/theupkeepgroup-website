@@ -1,25 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>404 — Page Not Found | The Upkeep Group</title>
-  <meta name="description" content="Sorry, we can’t find that page.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="logo.png" type="image/png">
+  <meta name="description" content="Sorry, we can’t find that page." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
 </head>
-<body>
+<body class="theme--dark">
+  <!-- Navbar -->
   <header class="nav">
     <div class="container nav__inner">
-      <a href="index.html" class="brand">
-        <img src="logo.svg" class="brand__logo" alt="UG logo">
+      <a href="index.html#home" class="brand" aria-label="The Upkeep Group — Home">
+        <img src="logo.png" alt="The Upkeep Group logo" class="brand__logo" />
         <span class="brand__name">The Upkeep Group</span>
       </a>
       <nav class="nav__links" id="navLinks">
         <a href="index.html#services">Services</a>
-        <a href="industries.html">Industries</a>
+        <a href="index.html#assurance">Assurance</a>
         <a href="about.html">About</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
         <a href="index.html#contact" class="btn btn--small btn--primary">Get a Quote</a>
       </nav>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
@@ -28,26 +28,63 @@
     </div>
   </header>
 
-  <main class="section center">
-    <div class="container" style="max-width:720px;">
-      <h1 class="section__title">404 — Page not found</h1>
-      <p class="muted">
-        Sorry, the page you’re looking for doesn’t exist or has moved.
-      </p>
-      <p style="margin-top:16px;">
-        <a class="btn btn--primary" href="index.html">Back to home</a>
-        <a class="btn btn--outline" href="index.html#contact">Contact us</a>
-      </p>
-    </div>
+  <main>
+    <!-- 404 -->
+    <section class="section hero center">
+      <div class="glow glow--orb"></div>
+      <div class="container" style="max-width:720px;">
+        <h1 class="hero__title">404 — Page not found</h1>
+        <p class="muted">
+          Sorry, the page you’re looking for doesn’t exist or may have been moved.
+        </p>
+        <div class="hero__cta" style="margin-top:20px;">
+          <a class="btn btn--primary" href="index.html">Back to home</a>
+          <a class="btn btn--ghost" href="index.html#contact">Contact us</a>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
+    <div class="container grid grid--4">
+      <div>
+        <a class="brand" href="index.html#home"><img src="logo.png" class="brand__logo" alt="" /> <span class="brand__name">The Upkeep Group</span></a>
+        <p class="muted small">IT • Facilities • Cleaning • Labour • Finance</p>
+      </div>
+      <div>
+        <div class="foot__title">Services</div>
+        <ul class="linklist">
+          <li><a href="it.html">Managed IT &amp; Cloud</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="cleaning.html">Cleaning</a></li>
+          <li><a href="labour.html">Labour Hire</a></li>
+          <li><a href="finance.html">Finance</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot__title">Company</div>
+        <ul class="linklist">
+          <li><a href="about.html">About</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot__title">Coverage</div>
+        <ul class="linklist">
+          <li>NSW • VIC • QLD • SA • ACT</li>
+          <li>ABN: 00 000 000 000</li>
+          <li>ACN: 000 000 000</li>
+        </ul>
+      </div>
+    </div>
     <div class="container center small muted border--top pad--sm">
       © <span id="year"></span> The Upkeep Group Pty Ltd.
     </div>
   </footer>
 
   <script src="script.js" defer></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

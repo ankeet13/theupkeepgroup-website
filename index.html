@@ -1,38 +1,28 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Upkeep Group — IT, Cleaning, Facilities, Labour Hire & Finance</title>
-  <meta name="description" content="The Upkeep Group Pty Ltd: multi-service partner for IT, Cleaning, Facilities, Labour Hire & Accounting/Finance across Australia.">
-  <meta property="og:title" content="The Upkeep Group">
-  <meta property="og:description" content="IT, Cleaning, Facilities, Labour Hire & Finance — one accountable partner.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://theupkeepgroup.com">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="logo.svg" type="image/svg+xml">
-  <link rel="manifest" href="manifest.webmanifest">
-  <!-- Optional analytics (Plausible). Replace domain when live -->
-  <script defer data-domain="theupkeepgroup.com" src="https://plausible.io/js/script.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Upkeep Group — IT • Facilities • Cleaning • Labour • Finance</title>
+  <meta name="description" content="One accountable partner for IT, Facilities, Cleaning, Labour Hire, and Finance. Premium, audit-ready operations across Australia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
 </head>
-<body>
+<body class="theme--dark">
+  <!-- Navbar -->
   <header class="nav">
     <div class="container nav__inner">
-      <a href="#home" class="brand">
-        <img src="logo.png" alt="UG logo" class="brand__logo">
-        <span class="brand__name">The Upkeep Group Pty Ltd</span>
+      <a href="#home" class="brand" aria-label="The Upkeep Group — Home">
+        <img src="logo.png" alt="The Upkeep Group logo" class="brand__logo" />
+        <span class="brand__name">The Upkeep Group</span>
       </a>
       <nav class="nav__links" id="navLinks">
         <a href="#services">Services</a>
-        <a href="#industries">Industries</a>
+        <a href="#assurance">Assurance</a>
         <a href="#about">About</a>
-        <a href="#compliance">Compliance</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
         <a href="#contact" class="btn btn--small btn--primary">Get a Quote</a>
       </nav>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
@@ -42,205 +32,173 @@
   </header>
 
   <main id="home">
+    <!-- HERO -->
     <section class="section hero">
-      <div class="glow glow--top"></div>
+      <div class="glow glow--orb"></div>
       <div class="container grid grid--2">
         <div>
           <h1 class="hero__title">
-            Multi-service excellence in
-            <span class="gradient-text">IT, Cleaning, Facilities, Labour Hire & Finance</span>
+            One accountable partner for
+            <span class="accent">IT, Facilities, Cleaning, Labour & Finance</span>
           </h1>
           <p class="muted">
-            We help organisations run smarter, cleaner, and safer: enterprise IT & cloud, commercial cleaning, facilities management, labour hire, and accounting & financial services.
+            Run smarter, safer operations with ISO-ready processes, police-checked staff, and transparent reporting.
+            Built by operators who get things done.
           </p>
           <div class="hero__cta">
-            <a class="btn btn--primary" href="#services">Explore Services</a>
-            <a class="btn btn--outline" href="#contact">Talk to us →</a>
-            <span class="badge">ISO-ready operations</span>
+            <a class="btn btn--primary" href="#contact">Start a scope</a>
+            <a class="btn btn--ghost" href="#services">Explore services</a>
           </div>
-
           <div class="badges">
+            <div class="pill">24/7 Coverage</div>
             <div class="pill">Insured</div>
-            <div class="pill">24/7 Support</div>
-            <div class="pill">Police-checked staff</div>
-            <div class="pill">Fast mobilisation</div>
+            <div class="pill">Police-checked</div>
+            <div class="pill">Rapid mobilisation</div>
           </div>
         </div>
 
         <div class="card hero__card reveal">
           <h3 class="card__title">What we deliver</h3>
-          <div class="grid grid--2 gap--md">
-            <div class="mini-card"><div class="mini-card__icon">💻</div><div><div class="mini-card__title">Managed IT & Cloud</div><div class="mini-card__desc">Helpdesk, network, M365, backups, cybersecurity.</div></div></div>
-            <div class="mini-card"><div class="mini-card__icon">🧼</div><div><div class="mini-card__title">Commercial Cleaning</div><div class="mini-card__desc">Routine, deep cleans, strata, hospitality, venues.</div></div></div>
-            <div class="mini-card"><div class="mini-card__icon">🏢</div><div><div class="mini-card__title">Facilities</div><div class="mini-card__desc">Hard/soft FM, maintenance, vendors, SLAs & audits.</div></div></div>
-            <div class="mini-card"><div class="mini-card__icon">👷</div><div><div class="mini-card__title">Labour Hire</div><div class="mini-card__desc">Screened staff: IT techs, cleaners, trades & events.</div></div></div>
-            <div class="mini-card"><div class="mini-card__icon">📊</div><div><div class="mini-card__title">Accounting & Finance</div><div class="mini-card__desc">Bookkeeping, BAS/GST, payroll, reporting.</div></div></div>
-            <div class="mini-card"><div class="mini-card__icon">🇦🇺</div><div><div class="mini-card__title">National Coverage</div><div class="mini-card__desc">NSW • VIC • QLD • SA • ACT.</div></div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="section">
-      <div class="container center">
-        <h2 class="section__title">Services that scale with you</h2>
-        <p class="muted">Mix & match across IT, Cleaning, Facilities, Labour Hire and Finance.</p>
-      </div>
-
-      <div class="container">
-        <div class="tabs">
-          <div class="tabs__list" role="tablist">
-            <button class="tab active" data-tab="it">IT</button>
-            <button class="tab" data-tab="cleaning">Cleaning</button>
-            <button class="tab" data-tab="fm">Facilities</button>
-            <button class="tab" data-tab="labour">Labour Hire</button>
-            <button class="tab" data-tab="finance">Finance</button>
-          </div>
-
-          <div class="tabs__content">
-            <div class="tab-panel active" id="it">
-              <div class="grid grid--3 gap--md">
-                <div class="card"><h4 class="card__title">Managed IT</h4><p class="muted">Helpdesk, endpoint mgmt, patching, assets.</p></div>
-                <div class="card"><h4 class="card__title">Cloud & Backup</h4><p class="muted">Microsoft 365, Azure, Google Workspace, DR.</p></div>
-                <div class="card"><h4 class="card__title">Security</h4><p class="muted">Email security, MFA, audits, compliance.</p></div>
-                <div class="card"><h4 class="card__title">Automation</h4><p class="muted">Scripting, onboarding/offboarding, SOPs.</p></div>
-                <div class="card"><h4 class="card__title">Web & Apps</h4><p class="muted">Websites, portals, integrations, APIs.</p></div>
-                <div class="card"><h4 class="card__title">Networking</h4><p class="muted">Wi-Fi, VLANs, firewalls, remote access.</p></div>
-              </div>
-            </div>
-
-            <div class="tab-panel" id="cleaning">
-              <div class="grid grid--3 gap--md">
-                <div class="card"><h4 class="card__title">Routine</h4><p class="muted">Offices, retail, gyms — QA checklists.</p></div>
-                <div class="card"><h4 class="card__title">Industrial</h4><p class="muted">Warehouses, builder cleans, OH&S.</p></div>
-                <div class="card"><h4 class="card__title">Audits & QA</h4><p class="muted">Site audits, photos, hygiene logs.</p></div>
-                <div class="card"><h4 class="card__title">Consumables</h4><p class="muted">Supply & manage at scale.</p></div>
-                <div class="card"><h4 class="card__title">Specialised</h4><p class="muted">Deep cleans, end-of-lease, sanitation.</p></div>
-                <div class="card"><h4 class="card__title">Scheduling</h4><p class="muted">Rosters & attendance tracking.</p></div>
-              </div>
-            </div>
-
-            <div class="tab-panel" id="fm">
-              <div class="grid grid--3 gap--md">
-                <div class="card"><h4 class="card__title">Facilities Ops</h4><p class="muted">Preventive maintenance, vendors, SLAs.</p></div>
-                <div class="card"><h4 class="card__title">Work Orders</h4><p class="muted">Ticketing, priorities, compliance logs.</p></div>
-                <div class="card"><h4 class="card__title">Safety</h4><p class="muted">Risk assessments, inductions, toolbox talks.</p></div>
-                <div class="card"><h4 class="card__title">Contracting</h4><p class="muted">Scopes, KPIs, reviews, renewals.</p></div>
-                <div class="card"><h4 class="card__title">Asset Registers</h4><p class="muted">Lifecycle, warranty, spares & procurement.</p></div>
-                <div class="card"><h4 class="card__title">Mobilisation</h4><p class="muted">Rapid site start-up with trained teams.</p></div>
-              </div>
-            </div>
-
-            <div class="tab-panel" id="labour">
-              <div class="grid grid--3 gap--md">
-                <div class="card"><h4 class="card__title">Skilled Staff</h4><p class="muted">IT support, cleaners, trades, events.</p></div>
-                <div class="card"><h4 class="card__title">Screening</h4><p class="muted">Police checks, WWCC, right-to-work.</p></div>
-                <div class="card"><h4 class="card__title">Compliance</h4><p class="muted">Fair Work, awards, payroll, WHS.</p></div>
-                <div class="card"><h4 class="card__title">Scheduling</h4><p class="muted">Timesheets, approvals, shift coverage.</p></div>
-                <div class="card"><h4 class="card__title">Onboarding</h4><p class="muted">Docs, licences, briefs, uniforms & PPE.</p></div>
-                <div class="card"><h4 class="card__title">Quality</h4><p class="muted">Performance reviews & feedback loops.</p></div>
-              </div>
-            </div>
-
-            <div class="tab-panel" id="finance">
-              <div class="grid grid--3 gap--md">
-                <div class="card"><h4 class="card__title">Accounting</h4><p class="muted">GL, reconciliations, month-end close.</p></div>
-                <div class="card"><h4 class="card__title">Bookkeeping</h4><p class="muted">Invoices, receipts, AR/AP, expenses.</p></div>
-                <div class="card"><h4 class="card__title">Payroll</h4><p class="muted">STP, superannuation, awards & timesheets.</p></div>
-                <div class="card"><h4 class="card__title">BAS & GST</h4><p class="muted">Preparation & lodgement (partners).</p></div>
-                <div class="card"><h4 class="card__title">Reporting & CFO</h4><p class="muted">Cashflow, budgets, KPI dashboards.</p></div>
-                <div class="card"><h4 class="card__title">Systems</h4><p class="muted">Xero/MYOB/QuickBooks setup & automation.</p></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="industries" class="section">
-      <div class="container center">
-        <h2 class="section__title">Industries we support</h2>
-        <p class="muted">From startups to venues and enterprise sites across Australia.</p>
-      </div>
-      <div class="container grid grid--3 gap--md">
-        <div class="card"><div class="card__title">Corporate & Offices</div><p class="muted">HQs, satellites, hybrid workplace.</p></div>
-        <div class="card"><div class="card__title">Warehousing & Industrial</div><p class="muted">Distribution, manufacturing, logistics.</p></div>
-        <div class="card"><div class="card__title">Events & Venues</div><p class="muted">Stadiums, functions, conferences.</p></div>
-        <div class="card"><div class="card__title">Retail & Hospitality</div><p class="muted">Stores, quick-service, hotels.</p></div>
-        <div class="card"><div class="card__title">Tech & SaaS</div><p class="muted">Startups, scaleups, enterprise IT.</p></div>
-        <div class="card"><div class="card__title">Government & Education</div><p class="muted">Schools, campuses, local councils.</p></div>
-      </div>
-    </section>
-
-    <section id="about" class="section section--soft">
-      <div class="container grid grid--2 gap--lg">
-        <div>
-          <h2 class="section__title">Built by operators who get things done</h2>
-          <p class="muted">The Upkeep Group is co-founded by <strong>Himal Sapkota</strong> and <strong>Sudip Ojha</strong>. We combine hands-on IT expertise with on-ground facilities and workforce operations to deliver reliable outcomes — not just promises.</p>
-          <ul class="list">
-            <li>Single partner for IT, cleaning, FM, labour & finance.</li>
-            <li>Police-checked, insured crews with documented SOPs.</li>
-            <li>Transparent reporting: photos, checklists & KPIs.</li>
+          <ul class="featurelist">
+            <li><span>💻</span> Managed IT &amp; Cloud — helpdesk, M365/Azure, security, backups</li>
+            <li><span>🏢</span> Facilities — PM schedules, work orders, audits &amp; SLAs</li>
+            <li><span>🧼</span> Cleaning — routine, industrial, deep cleans, QA with photos</li>
+            <li><span>👷</span> Labour Hire — screened staff, awards, payroll &amp; rosters</li>
+            <li><span>📊</span> Finance — bookkeeping, payroll, BAS/GST &amp; reporting</li>
           </ul>
         </div>
-        <div class="grid grid--2 gap--md">
-          <div class="person card"><div class="avatar">HS</div><div class="person__name">Himal Sapkota</div><div class="muted">Co-founder/Director  FM,Labour and Cleaning</div></div>
-          <div class="person card"><div class="avatar">SO</div><div class="person__name">Sudip Ojha</div><div class="muted">Co-founder IT,Operations and Finance</div></div>
-        </div>
+      </div>
     </section>
-    <section id="compliance" class="section">
+
+    <!-- SERVICES -->
+    <section id="services" class="section section--panel">
       <div class="container center">
-        <h2 class="section__title">Compliance & Assurance</h2>
-      </div>
-      <div class="container grid grid--3 gap--md">
-        <div class="card"><div class="card__title">ASIC-registered Pty Ltd</div><p class="muted">ABN/ACN, constitution, officer details.</p></div>
-        <div class="card"><div class="card__title">Insurance</div><p class="muted">Public Liability, Workers’ Comp, Prof. Indemnity.</p></div>
-        <div class="card"><div class="card__title">Fair Work & Payroll</div><p class="muted">Awards, payslips, superannuation.</p></div>
-        <div class="card"><div class="card__title">WHS & Inductions</div><p class="muted">Risk assessments, SWMS, toolbox talks.</p></div>
-        <div class="card"><div class="card__title">Licensing</div><p class="muted">Labour Hire licensing where required.</p></div>
-        <div class="card"><div class="card__title">Data & Security</div><p class="muted">MDM, backups, MFA, awareness.</p></div>
+        <h2 class="section__title">Services</h2>
+        <p class="muted">Pick one—or combine several—under a single SLA.</p>
       </div>
 
-      <div class="container">
-        <div class="cta">
-          <div><div class="cta__title">Need documentation fast?</div><p>We can provide insurance certificates, SWMS, site plans and induction packs within 24 hours.</p></div>
-          <a class="btn btn--secondary" href="#contact">Request docs</a>
+      <div class="container grid grid--3">
+        <a class="svc card" href="it.html">
+          <div class="svc__icon">💻</div>
+          <div class="svc__title">Managed IT &amp; Cloud</div>
+          <p class="muted small">Helpdesk, endpoints, Microsoft 365/Azure, security, DR.</p>
+          <span class="svc__cta">Learn more →</span>
+        </a>
+
+        <a class="svc card" href="facilities.html">
+          <div class="svc__icon">🏢</div>
+          <div class="svc__title">Facilities</div>
+          <p class="muted small">Preventive maintenance, vendors, work orders &amp; audits.</p>
+          <span class="svc__cta">Learn more →</span>
+        </a>
+
+        <a class="svc card" href="cleaning.html">
+          <div class="svc__icon">🧼</div>
+          <div class="svc__title">Cleaning</div>
+          <p class="muted small">Routine, industrial, deep cleans, hygiene logs &amp; QA.</p>
+          <span class="svc__cta">Learn more →</span>
+        </a>
+
+        <a class="svc card" href="labour.html">
+          <div class="svc__icon">👷</div>
+          <div class="svc__title">Labour Hire</div>
+          <p class="muted small">Screened staff, rosters, timesheets, awards &amp; payroll.</p>
+          <span class="svc__cta">Learn more →</span>
+        </a>
+
+        <a class="svc card" href="finance.html">
+          <div class="svc__icon">📊</div>
+          <div class="svc__title">Finance</div>
+          <p class="muted small">Bookkeeping, BAS/GST, payroll &amp; management reporting.</p>
+          <span class="svc__cta">Learn more →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ASSURANCE -->
+    <section id="assurance" class="section">
+      <div class="container grid grid--3">
+        <div class="card">
+          <div class="card__title">Assurance &amp; Compliance</div>
+          <ul class="list">
+            <li>ASIC-registered Pty Ltd and insured</li>
+            <li>WHS, SWMS, inductions &amp; toolbox talks</li>
+            <li>Police checks &amp; right-to-work verified</li>
+            <li>Data protection: MFA, backups, MDM</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card__title">Operational Transparency</div>
+          <ul class="list">
+            <li>KPIs and service dashboards</li>
+            <li>Checklists, photos &amp; audit logs</li>
+            <li>Clear SLAs and change control</li>
+            <li>Quarterly reviews &amp; roadmap</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card__title">Fast Mobilisation</div>
+          <ul class="list">
+            <li>Playbooks for IT, FM &amp; Cleaning</li>
+            <li>Vendor onboarding &amp; inductions</li>
+            <li>Rosters, timesheets &amp; payroll</li>
+            <li>National coverage (NSW • VIC • QLD • SA • ACT)</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section section--soft">
-      <div class="container grid grid--2 gap--lg">
+    <!-- ABOUT -->
+    <section id="about" class="section section--panel">
+      <div class="container grid grid--2">
         <div>
-          <h2 class="section__title">Let’s build your scope</h2>
-          <p class="muted">Tell us what you need and we’ll propose a tailored, KPI-driven solution across IT, Cleaning, FM, Labour or Finance.</p>
-          <div class="stack">
-            <div class="row"><span>☎</span> +61 ••• ••• •••</div>
-            <div class="row"><span>✉</span> hello@theupkeepgroup.com</div>
-            <div class="row"><span>📍</span> Sydney, NSW</div>
+          <h2 class="section__title">Built by operators</h2>
+          <p class="muted">Co-founded by <strong>Himal Sapkota</strong> and <strong>Sudip Ojha</strong>. We unite IT, facilities and workforce operations into one accountable partner so you don’t juggle vendors.</p>
+          <ul class="list">
+            <li>Hands-on leadership and on-site presence</li>
+            <li>Documented SOPs and QA audits</li>
+            <li>Outcome-driven, not ticket-driven</li>
+          </ul>
+        </div>
+        <div class="grid grid--2">
+          <div class="person card"><div class="avatar">HS</div><div class="person__name">Himal Sapkota</div><div class="muted">Co-founder / Director</div></div>
+          <div class="person card"><div class="avatar">SO</div><div class="person__name">Sudip Ojha</div><div class="muted">Co-founder</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container grid grid--2">
+        <div>
+          <h2 class="section__title">Let’s scope your needs</h2>
+          <p class="muted">Tell us about your sites and systems. We’ll send a tailored, KPI-driven proposal.</p>
+          <div class="grid grid--2" style="margin-top:10px;">
+            <div class="row"><span>✉</span> <span class="muted">hello@theupkeepgroup.com</span></div>
+            <div class="row"><span>📍</span> <span class="muted">Sydney, NSW</span></div>
           </div>
         </div>
 
+        <!-- Formspree endpoint: replace if you have a new one -->
         <form id="contactForm" class="card form" method="POST" action="https://formspree.io/f/movneyob">
-          <input type="hidden" name="_subject" value="New enquiry — The Upkeep Group">
-          <div class="grid grid--2 gap--md">
+          <input type="hidden" name="_subject" value="New enquiry — The Upkeep Group" />
+          <div class="grid grid--2">
             <div class="field">
               <label>Name</label>
-              <input type="text" name="name" required placeholder="Your name">
+              <input type="text" name="name" required placeholder="Your name" />
             </div>
             <div class="field">
               <label>Email</label>
-              <input type="email" name="email" required placeholder="you@example.com">
+              <input type="email" name="email" required placeholder="you@example.com" />
             </div>
           </div>
           <div class="field">
             <label>Company (optional)</label>
-            <input type="text" name="company" placeholder="Company name">
+            <input type="text" name="company" placeholder="Company name" />
           </div>
           <div class="field">
             <label>What do you need?</label>
-            <textarea name="message" rows="5" required placeholder="Tell us about your IT / Cleaning / FM / Labour / Finance needs…"></textarea>
+            <textarea name="message" rows="5" required placeholder="Tell us about your IT / Facilities / Cleaning / Labour / Finance needs…"></textarea>
           </div>
           <div class="form__actions">
             <small class="muted">By submitting, you agree to our privacy policy.</small>
@@ -254,41 +212,42 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container grid grid--4 gap--lg">
+    <div class="container grid grid--4">
       <div>
-        <a class="brand"><img src="logo.png" class="brand__logo" alt=""> <span class="brand__name">The Upkeep Group</span></a>
-        <p class="muted small">A single partner for IT, Cleaning, Facilities, Labour Hire & Finance across Australia.</p>
+        <a class="brand" href="#home"><img src="logo.png" class="brand__logo" alt="" /> <span class="brand__name">The Upkeep Group</span></a>
+        <p class="muted small">IT • Facilities • Cleaning • Labour • Finance</p>
       </div>
       <div>
         <div class="foot__title">Services</div>
         <ul class="linklist">
-          <li><a href="#services">Managed IT & Cloud</a></li>
-          <li><a href="#services">Commercial Cleaning</a></li>
-          <li><a href="#services">Facilities Management</a></li>
-          <li><a href="#services">Labour Hire</a></li>
-          <li><a href="#services">Accounting & Finance</a></li>
+          <li><a href="it.html">Managed IT &amp; Cloud</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="cleaning.html">Cleaning</a></li>
+          <li><a href="labour.html">Labour Hire</a></li>
+          <li><a href="finance.html">Finance</a></li>
         </ul>
       </div>
       <div>
         <div class="foot__title">Company</div>
         <ul class="linklist">
-          <li><a href="#about">About</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="industries.html">Industries</a></li>
           <li><a href="privacy.html">Privacy</a></li>
           <li><a href="terms.html">Terms</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <div class="foot__title">Legal & Admin</div>
+        <div class="foot__title">Coverage</div>
         <ul class="linklist">
+          <li>NSW • VIC • QLD • SA • ACT</li>
           <li>ABN: 00 000 000 000</li>
           <li>ACN: 000 000 000</li>
-          <li>NSW • VIC • QLD • SA • ACT</li>
         </ul>
       </div>
     </div>
-    <div class="container center small muted border--top pad--sm">© <span id="year"></span> The Upkeep Group Pty Ltd. All rights reserved.</div>
+    <div class="container center small muted border--top pad--sm">© <span id="year"></span> The Upkeep Group Pty Ltd.</div>
   </footer>
 
   <script src="script.js" defer></script>
