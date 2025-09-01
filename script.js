@@ -80,3 +80,17 @@ document.getElementById('year')?.appendChild(document.createTextNode(String(new 
   document.addEventListener('click', e => { if (!isDesktop() && !links.contains(e.target) && !toggle.contains(e.target)) setMobileClosed(); });
   window.addEventListener('resize', () => { if (isDesktop()) setDesktop(); else if (links.style.display === '') setMobileClosed(); });
 })();
+
+
+// Preloader fade out (with minimum display time)
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  if (preloader) {
+    // show for 2.25 seconds (25% shorter than 3s)
+    setTimeout(() => {
+      preloader.style.transition = "opacity 0.6s ease";
+      preloader.style.opacity = "0";
+      setTimeout(() => preloader.remove(), 600); // remove after fade
+    }, 2250); // 2250ms = 2.25s
+  }
+});
